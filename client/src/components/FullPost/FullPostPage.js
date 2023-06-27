@@ -110,7 +110,7 @@ const FullPost = () => {
                 <div className={s.text_block}>{post.text}</div>
                 <div className={post.imgUrl ? s.block_img : s.block_img_none}>
                     {post.imgUrl && (
-                        <img className={s.image} src={`${process.env.REACT_APP_API_URL}/${post.imgUrl}`} alt="" ></img>)}
+                        <img className={s.image} src={`https://events-mern-server-h337jz25i-razinandrey.vercel.app/${post.imgUrl}`} alt="" ></img>)}
                 </div>
                 <div className={s.block_author_and_date}>
                     <div className={s.block_author}>

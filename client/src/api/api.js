@@ -4,7 +4,7 @@ import axios from "axios";
 // настройки axios
 const instance = axios.create({
     // baseURL: 'http://localhost:4444/api' https://events-mern-server-h337jz25i-razinandrey.vercel.app/
-    baseURL: process.env.REACT_APP_API_URL
+    baseURL: 'https://events-mern-server-h337jz25i-razinandrey.vercel.app/api'
 });
 
 // проверка на token => есть, то не будет выкидывать из аккаунта + доступ
