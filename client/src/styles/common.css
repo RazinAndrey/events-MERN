@@ -1,0 +1,25 @@
+html, body, #root{
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 0fr 1fr 0fr;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not_found {
+  margin: 40px 20px 20px 20px;
+  font-size: 20px;
+  color: #fff;
+}

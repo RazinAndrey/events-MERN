@@ -1,0 +1,12 @@
+/* подвал */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* текст */
+.footer_p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}

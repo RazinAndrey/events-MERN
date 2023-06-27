@@ -1,0 +1,61 @@
+.title_full_comment {
+    font-size: 24px;
+    color: orange;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.comment_enter_and_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px 0px 20px 0px;
+}
+
+.comment_enter {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    resize: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comment_btn{
+    border-radius: 5px;
+    background-color: orange;
+    font-family: 'Nunito', sans-serif;
+    padding: 5px;
+    font-size: 18px;
+    color: #333;
+    cursor : pointer;
+}
+
+.date {
+    color: lightgray;
+}
+/* .comment{
+    display: flex;
+    padding: 0px 0px 10px 0px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+
+/* выключение */
+.comment_btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.auth {
+    color: lightgray;
+    color: 14px
+}

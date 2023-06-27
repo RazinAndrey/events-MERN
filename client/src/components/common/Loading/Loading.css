@@ -1,0 +1,13 @@
+/* загрузка */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* gif */
+.loading_img {
+    width: 100px;
+    height: 100px;
+}

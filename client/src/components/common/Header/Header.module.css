@@ -1,0 +1,88 @@
+/* шапка */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* логотип */
+.logo {
+  font-size: 24px;
+  color: orange;
+  font-weight: 800;
+  cursor: default;
+}
+
+/* ссылки */
+.navbar_pc a, 
+.navbar_mobile a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.navbar_pc a:hover,
+.navbar_mobile a:hover {
+  color: orange;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+.links a {
+  border: 2px solid transparent;
+}
+.active_link{
+  border-bottom: 2px solid orange !important; 
+}
+
+/* кнопки */
+.navbar_btns {
+  color: #fff;
+  cursor: pointer;
+  background-color: none;
+  font-size: 24px;
+  display: none;
+}
+.btn_open,
+.btn_close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* адаптивный дизайн */
+@media(max-width: 767px){
+  .navbar_btns {
+    display: block;
+  }
+  .navbar_pc {
+    display: none;
+  }
+  .navbar_mobile {
+    position: absolute;
+    top: 50px;
+    right: 1rem;
+    left: 1rem;
+    width: unset;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(300px);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 100;
+  }
+  .links {
+    margin: 10px;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+

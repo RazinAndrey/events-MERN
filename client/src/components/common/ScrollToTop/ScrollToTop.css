@@ -1,0 +1,29 @@
+.top-to-btn{
+    position: relative;
+}
+
+.icon-up{
+    /* позиция */
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    z-index: 20;
+    /* стиль  */
+    background-color: orange;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.icon-up:hover{
+    animation: none;
+    background: #fff;
+    color: orange;
+    border: 2px solid orange;
+    transition: all .5s ease;
+}
+

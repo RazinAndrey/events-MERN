@@ -1,0 +1,165 @@
+/* блоки */
+.login, 
+.register,
+.create { 
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* формa */
+.form-custom {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/* элемент формы */
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+}
+
+/* заголовок */
+.title {
+    color: orange;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    font-size: 24px;
+}
+
+/* названия */
+.form-lable {
+    color: orange;
+    font-size: 18px;
+}
+
+/* ввод */
+.form-input,
+.create-input, .create-textarea, .select-custom {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+.create-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* кнопки */
+.btn-login,
+.btn-register,
+.btn-create,
+.btn-cancel,
+.btn-upload,
+.btn-delete,
+.btn-edit  {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold; 
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+/* вход, регистрация */
+.btn-login,
+.btn-register {
+    background-color: orange;
+}
+/* блок кнопок */
+.block-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* создание */
+.btn-create {
+    background-color: lightgreen;
+    width: 100%;
+    margin: 0px 5px 0px 0px;
+}
+/* обновление */
+.btn-edit {
+    background-color: lightblue;
+    width: 100%;
+    margin: 0px 5px 0px 0px;
+}
+/* отмена */
+.btn-cancel {
+    background-color: lightgray;
+    font-size: 20px;
+}
+/* btn-загрузка-img */
+.btn-upload {
+    border: 2px dashed #ccc;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: orange;
+}
+.btn-delete{
+    background-color: lightcoral;
+    width: 100%;
+}
+/* наведение */
+.btn-login:hover,
+.btn-register:hover,
+.btn-cancel:hover,
+.btn-create:hover{
+    animation: opacity 0.2s ease-in-out;
+}
+@keyframes opacity{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* нажатие */
+.btn-login:active,
+.btn-register:active,
+.btn-cancel:active,
+.btn-create:active {
+    transform: scale(0.70);
+}
+/* выключение */
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* ошибка */
+.error-message {
+    color: red;
+    font-size: 16px;
+}
+.error-message::before {
+    display: inline;
+    content: "⚠ ";
+}
+
+.react-datepicker__close-icon{
+    color: red;
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.type {
+    color: #fff;
+    font-size: 18px;
+}
