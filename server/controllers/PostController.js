@@ -3,6 +3,7 @@ import UserModel from '../models/User.js';
 import CommentModel from '../models/Comment.js';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import fs from 'fs';
 
 export const getAll = async (req, res) => {
     try {
@@ -104,8 +105,13 @@ export const create = async (req, res) => {
             let fileName = req.files.image.name;
             // доступ к папке
             const __dirname = dirname(fileURLToPath(import.meta.url));
+
+            if(!fs.existsSync('uploads')){
+                fs.mkdirSync('uploads');
+            }
             // перемещаем file в папку 
             req.files.image.mv(path.join(__dirname, "..", 'uploads', fileName));
+            
 
             // создаём экземпляр объекта пост с file
             const newPostWithImage = new PostModel({
