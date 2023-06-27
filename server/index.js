@@ -67,3 +67,5 @@ const start = async () => {
     }
 }
 start();
+
+// тест
