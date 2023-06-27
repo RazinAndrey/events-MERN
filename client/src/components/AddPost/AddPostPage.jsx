@@ -76,7 +76,6 @@ const Create = () => {
                         value={title} />
                     <div className="error">{errors.title && <p className="error-message">{errors.title.message}</p>}</div>
                 </div>
-                {/* defaultValue="default"> */}
                 <div className="item">
                     <label className="form-lable">Тип</label>
                     <select className="select-custom" onChange={(e) => setType(e.target.value)} value={type}>  

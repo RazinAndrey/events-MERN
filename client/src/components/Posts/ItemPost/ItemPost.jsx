@@ -12,7 +12,7 @@ const ItemPost = ({ post }) => {
                 <div className='image_info'>
                     <div className={post.imgUrl && 'image-block'}>
                         {post.imgUrl && (
-                            <img className='image' src={`https://events-mern-server-h337jz25i-razinandrey.vercel.app/${post.imgUrl}`} alt="" ></img>
+                            <img className='image' src={`${process.env.REACT_APP_API_URL}/${post.imgUrl}`} alt="" ></img>
                         )}
                     </div>
                     <div className='info'>
