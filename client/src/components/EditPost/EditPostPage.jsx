@@ -132,7 +132,7 @@ const EditPostPage = () => {
                     <div className="img-and-btn">
                         {oldImage &&
                             <>
-                                <img src={`http://localhost:4444/${oldImage}`} alt="" />
+                                <img src={`https://events-mern-server-h337jz25i-razinandrey.vercel.app/${oldImage}`} alt="" />
                                 <button type="button" className="btn-delete" onClick={onClickRemoveOldImage}>Удалить</button>
                             </>
                         }
